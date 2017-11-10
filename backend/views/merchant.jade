@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  #root
+  //- Images, media etc need to be included within the same folder structure
+  //- CSS files are pulled from MOTHER_APP only, forcing UX consistency across apps
+  img(src= "./media/logo.5d5d9eef.svg")
+  //- Need to swap localhost:8080 with environment variables pointing to the IP addresses of the given
+  //- dev, qa, prod machines for merchant
+  //- Benefits
+  //- Each individual app has its own stack and environments all the way up to prod, giving full flexibility
+  //- Ease in adding more apps while maintaining full control
+  //- Common components become a part of MOTHER_APP codebase (header, footer, login etc) and can potentially interact
+  //- with subapps (given that the subapps will render within the MOTHER_APP code at the end of the day)
+  script(src="http://localhost:8080/static/js/main.cc499d2e.js")

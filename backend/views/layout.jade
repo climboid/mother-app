@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='stylesheets/style.css')
+    link(rel='stylesheet', href='http://localhost:8080/static/css/main.c17080f1.css')
+  body
+    nav
+    .clear.purple-bg.clear-nav
+      .block-left
+        img(src= "images/logo.png" class="logo")
+        input#bar.foo1
+      .block-right
+        img(src="images/tile-icon.png" class="tile-icon")
+        img(src="images/tile-icon.png" class="tile-icon")
+        img(src="images/tile-icon.png" class="tile-icon")
+        img(src="images/tile-icon.png" class="tile-icon")
+    .clear
+      .block-left
+        ul.left-menu
+          li
+            a(href="/finance") Finance
+          li
+            a(href="/merchant") Merchant
+          li
+            a(href="/hr") HR
+      .block-left.content
+        block content
