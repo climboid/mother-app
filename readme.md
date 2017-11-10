@@ -1,12 +1,14 @@
 You will need to have `NodeJS` and somekind of webserver such as `http-server`. You can install `http-server` from `npm` via `npm i -g http-server`
 
+Clone or download this repository then:
+
 ```
 cd mother-app/backend
 npm i
 npm run start
 ```
 
-In a separate terminal window go to frontend directory
+In a separate terminal window go to frontend directory then:
 
 ```
 cd ../frontend
